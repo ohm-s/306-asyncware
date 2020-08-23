@@ -1,6 +1,6 @@
 {
   "name": "306-asyncware",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Commonly used midlewares for koa",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

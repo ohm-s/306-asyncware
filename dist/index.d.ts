@@ -3,6 +3,7 @@ import healthMiddleware from './middleware/health';
 import loggerMiddleware from './middleware/logger';
 import optionsMiddleware from './middleware/options';
 import asyncMiddleware from './middleware/async';
+import catchAllMiddleware, { DefaultParameterizedContext } from './middleware/catchall';
 import BoltLogger from '306-boltlogger';
 /**
  * An interface of possibly define locals in express
@@ -12,4 +13,4 @@ interface CommonLocals {
     logger?: BoltLogger;
     requestAborted?: boolean;
 }
-export { httpAbortMiddleware, healthMiddleware, loggerMiddleware, optionsMiddleware, asyncMiddleware, CommonLocals };
+export { httpAbortMiddleware, healthMiddleware, loggerMiddleware, optionsMiddleware, asyncMiddleware, catchAllMiddleware, CommonLocals, DefaultParameterizedContext };
